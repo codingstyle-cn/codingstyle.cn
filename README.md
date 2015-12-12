@@ -1,6 +1,6 @@
-## Ruby China
+## 深圳软件匠艺小组
 
-This is the source code of [Ruby China](http://ruby-china.org) website.
+This is the source code of [Shenzhen Software Craftsmanship Group](http://codingstyle.cn) website.
 
 [![Build Status](https://travis-ci.org/ruby-china/ruby-china.svg?branch=master)](https://travis-ci.org/ruby-china/ruby-china) [![Code Climate](https://codeclimate.com/github/ruby-china/ruby-china/badges/gpa.svg)](https://codeclimate.com/github/ruby-china/ruby-china) [![codecov.io](https://codecov.io/github/ruby-china/ruby-china/coverage.svg?branch=master)](https://codecov.io/github/ruby-china/ruby-china?branch=master)
 
@@ -58,8 +58,8 @@ curl -sSL https://git.io/vVHhm | bash
 ```
 
 ```bash
-$ git clone https://github.com/ruby-china/ruby-china.git
-$ cd ruby-china
+$ git clone https://github.com/hkliya/codingstyle.cn.git
+$ cd codingstyle.cn
 $ ./bin/setup
 Checking Package Dependencies...
 --------------------------------------------------------------------------------
@@ -83,7 +83,7 @@ Seed default data...                                                      [Done]
 
 == Removing old logs and tempfiles ==
 
-Ruby China Successfully Installed.
+Successfully Installed.
 
 $ rails s
 ```
@@ -106,11 +106,12 @@ You need upload emoji images into `/assets/emojis` production environment path /
 
 ## Thanks
 
+* [Ruby China](http://ruby-china.org)
 * [Twitter Bootstrap](https://twitter.github.com/bootstrap)
 * [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/)
 * [Google Roboto Font](https://github.com/google/roboto)
 
-Forked from [Homeland Project](https://github.com/huacnlee/homeland)
+Forked from [Homeland Project](https://github.com/ruby-china/ruby-china)
 Theme from [Mediom](https://github.com/huacnlee/mediom)
 
 ## Sites
@@ -124,7 +125,7 @@ Theme from [Mediom](https://github.com/huacnlee/mediom)
 
 ## License
 
-Copyright (c) 2011-2016 Ruby China
+Copyright (c) 2011-2016 Coding Style
 
 Released under the MIT license:
 
