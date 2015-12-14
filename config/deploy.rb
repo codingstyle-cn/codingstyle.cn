@@ -8,8 +8,8 @@ default_run_options[:pty] = true
 
 set :rvm_ruby_string, 'ruby-2.3.0'
 set :rvm_type, :user
-set :application, 'ruby-china'
-set :repository,  'git://github.com/ruby-china/ruby-china.git'
+set :application, 'codingstyle'
+set :repository,  'git://github.com/hkliya/codingstyle.cn.git'
 set :branch, 'master'
 set :scm, :git
 set :user, 'ruby'
@@ -23,10 +23,10 @@ set :puma_state, "#{current_path}/tmp/pids/puma.state"
 set :puma_config_file, "config/puma-web.rb"
 set :sidekiq_config, "#{current_path}/config/sidekiq.yml"
 
-role :web, 'ruby-china.org'
-role :app, 'ruby-china.org'
-role :db,  'ruby-china.org', primary: true
-role :queue, 'ruby-china.org'
+role :web, 'codingstyle.cn'
+role :app, 'codingstyle.cn'
+role :db,  'codingstyle.cn', primary: true
+role :queue, 'codingstyle.cn'
 
 task :link_shared, roles: :web do
   run "mkdir -p #{shared_path}/log"
