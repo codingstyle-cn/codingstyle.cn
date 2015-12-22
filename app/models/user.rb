@@ -13,7 +13,53 @@ class User < ApplicationRecord
   ALLOW_LOGIN_CHARS_REGEXP = /\A[A-Za-z0-9\-\_\.]+\z/
 
   devise :database_authenticatable, :registerable, :recoverable,
-         :rememberable, :trackable, :validatable, :omniauthable
+         :rememberable, :trackable, :validatable, :omniauthable, :async
+
+  field :email, type: String, default: ''
+  # Email 的 md5 值，用于 Gravatar 头像
+  field :email_md5
+  # Email 是否公开
+  field :email_public, type: Mongoid::Boolean
+  field :encrypted_password, type: String, default: ''
+
+  ## Recoverable
+  field :reset_password_token,   type: String
+  field :reset_password_sent_at, type: Time
+
+  ## Rememberable
+  field :remember_created_at, type: Time
+
+  ## Trackable
+  field :sign_in_count,      type: Integer, default: 0
+  field :current_sign_in_at, type: Time
+  field :last_sign_in_at,    type: Time
+  field :current_sign_in_ip, type: String
+  field :last_sign_in_ip,    type: String
+
+  field :login
+  field :name
+  field :location
+  field :location_id, type: Integer
+  field :bio
+  field :website
+  field :company
+  field :github
+  field :twitter
+  # 是否信任用户
+  field :verified, type: Mongoid::Boolean, default: true
+  # 是否是 HR
+  field :hr, type: Mongoid::Boolean, default: false
+  field :state, type: Integer, default: 1
+  field :tagline
+  field :topics_count, type: Integer, default: 0
+  field :replies_count, type: Integer, default: 0
+  # 用户密钥，用于客户端验证
+  field :private_token
+  field :favorite_topic_ids, type: Array, default: []
+  # 屏蔽的节点
+  field :blocked_node_ids, type: Array, default: []
+  # 屏蔽的用户
+  field :blocked_user_ids, type: Array, default: []
 
   mount_uploader :avatar, AvatarUploader
 
