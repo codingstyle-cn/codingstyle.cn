@@ -78,6 +78,10 @@ class TopicsController < ApplicationController
     check_current_user_status_for_topic
     set_special_node_active_menu
 
+    @threads.each(&:join)
+
+    @recommend_topics = Topic.excellent.recent.fields_for_list.limit(5).to_a
+
     set_seo_meta "#{@topic.title} &raquo; #{t('menu.topics')}"
   end
 
