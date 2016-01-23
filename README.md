@@ -1,6 +1,6 @@
-## 深圳软件匠艺小组
+## 中国「软件匠艺小组」
 
-This is the source code of [Shenzhen Software Craftsmanship Group](http://codingstyle.cn) website.
+This is the source code of [China Software Craftsmanship Group](http://codingstyle.cn) website.
 
 [![Build Status](https://travis-ci.org/ruby-china/ruby-china.svg?branch=master)](https://travis-ci.org/ruby-china/ruby-china) [![Code Climate](https://codeclimate.com/github/ruby-china/ruby-china/badges/gpa.svg)](https://codeclimate.com/github/ruby-china/ruby-china) [![codecov.io](https://codecov.io/github/ruby-china/ruby-china/coverage.svg?branch=master)](https://codecov.io/github/ruby-china/ruby-china?branch=master)
 
