@@ -9,7 +9,7 @@ default_run_options[:pty] = true
 set :rvm_ruby_string, 'ruby-2.3.0'
 set :rvm_type, :user
 set :application, 'codingstyle'
-set :repository,  'git://github.com/hkliya/codingstyle.cn.git'
+set :repository,  'git@github.com:codingstyle-cn/codingstyle.cn.git'
 set :branch, 'master'
 set :scm, :git
 set :user, 'ruby'
