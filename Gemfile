@@ -117,7 +117,9 @@ gem 'rack-mini-profiler', require: false
 
 gem 'oneapm_rpm'
 
-gem 'exception_notification'
+gem 'lograge'
+
+gem 'rest-client', '~> 1.8.0'
 
 gem 'status-page'
 

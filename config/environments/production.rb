@@ -51,15 +51,10 @@ Rails.application.configure do
   # https://github.com/rails/rails/issues/8388
   config.action_controller.default_asset_host_protocol = :relative
 
-  # Decrease the log volume.
+  config.logger = Logger.new(STDOUT)
+  config.logger.level = Logger.const_get('WARN')
   config.log_level = :warn
-
-  # Prepend all log lines with the following tags.
-  # config.log_tags = [ :subdomain, :request_id ]
-
-  # Use a different logger for distributed setups.
-  # require 'syslog/logger'
-  # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
+  config.lograge.enabled = true
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store

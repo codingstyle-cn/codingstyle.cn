@@ -230,6 +230,10 @@ GEM
       posix-spawn (>= 0.3.0)
     letter_opener (1.4.1)
       launchy (~> 2.2)
+    lograge (0.3.6)
+      actionpack (>= 3)
+      activesupport (>= 3)
+      railties (>= 3)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -482,7 +486,9 @@ DEPENDENCIES
   kgio
   letter_avatar
   letter_opener
-  md_emoji
+  lograge
+  md_emoji (= 1.0.2)
+  message_bus
   mini_magick
   nokogiri
   notifications
