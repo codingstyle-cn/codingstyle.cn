@@ -52,7 +52,7 @@ Rails.application.configure do
   config.action_controller.default_asset_host_protocol = :relative
 
   # Decrease the log volume.
-  config.log_level = :info
+  config.log_level = :warn
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :request_id ]
