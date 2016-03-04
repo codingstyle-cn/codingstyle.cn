@@ -47,30 +47,6 @@
 
     <%= render partial: "ban_reason" %>
 
-<% cache([@topic.user, "bio-markdown"]) do %>
-  <% if !@topic.user.bio.blank? %>
-    <div class="panel panel-default">
-      <div class="panel-heading"><%= "关于作者：" + @topic.user.fullname %></div>
-      <div class="panel-body markdown">
-        <%= markdown(@topic.user.bio) %>
-      </div>
-    </div>
-  <% end %>
-<% end %>
-
-  <% if @related_topics.present? %>
-    <div class="panel panel-default topics">
-      <div class="panel-heading media clearfix">
-        <%= t("topics.related_topics") %>
-      </div>
-      <div class="panel-body">
-        <% cache(@related_topics) do %>
-          <%= render partial: "topics/topic", collection: @related_topics, locals: { suggest: false } %>
-        <% end %>
-      </div>
-    </div>
-  <% end %>
-
   <% if @replies.blank? %>
     <div class="no-result">
       <%= t("topics.no_replies") %>
@@ -121,11 +97,24 @@
       </div>
     </div>
   <% end %>
+
+  <% if @related_topics.present? %>
+      <div class="panel panel-default topics">
+        <div class="panel-heading media clearfix">
+          <%= t("topics.related_topics") %>
+        </div>
+        <div class="panel-body">
+          <% cache(@related_topics) do %>
+              <%= render partial: "topics/topic", collection: @related_topics, locals: { suggest: false } %>
+          <% end %>
+        </div>
+      </div>
+  <% end %>
   </div>
 
-<% if !mobile? %>
-  <div class="sidebar hidden-mobile col-md-3">
-    <%= render 'topic_sidebar' %>
-  </div>
-<% end %>
+  <% if !mobile? %>
+    <div class="sidebar hidden-mobile col-md-3">
+      <%= render 'topic_sidebar' %>
+    </div>
+  <% end %>
 </div>
