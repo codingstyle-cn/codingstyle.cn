@@ -526,6 +526,7 @@ DEPENDENCIES
   social-share-button
   sprockets
   status-page
+  tunemygc
   turbolinks!
   uglifier
   will_paginate

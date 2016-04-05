@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   # Serve websocket cable requests in-process
   mount ActionCable.server => '/cable'
 
+  get 'advertisements/show'
+
   use_doorkeeper do
     controllers applications: 'oauth/applications', authorized_applications: 'oauth/authorized_applications'
   end
@@ -127,6 +129,7 @@ Rails.application.routes.draw do
   require 'sidekiq/web'
   authenticate :user, ->(u) { u.admin? } do
     mount Sidekiq::Web => '/sidekiq'
+    mount Split::Dashboard => '/split'
   end
 
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)

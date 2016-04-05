@@ -123,7 +123,11 @@ gem 'rest-client', '~> 1.8.0'
 
 gem 'status-page'
 
+# A/B testing
+gem 'split', require: 'split/dashboard'
+
 group :development do
+  gem 'derailed'
   gem 'capistrano', '2.9.0', require: false
   gem 'rvm-capistrano', require: false
   gem 'capistrano-sidekiq'
