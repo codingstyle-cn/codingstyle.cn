@@ -128,6 +128,11 @@ gem 'split', require: 'split/dashboard'
 
 group :development do
   gem 'derailed'
+  gem 'byebug'
+  gem 'pry-byebug'
+end
+
+group :development, :test do
   gem 'capistrano', '2.9.0', require: false
   gem 'rvm-capistrano', require: false
   gem 'capistrano-sidekiq'
