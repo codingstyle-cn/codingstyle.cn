@@ -23,6 +23,7 @@
         <%= raw Setting.before_topic_html %>
 
         <article>
+          <%= raw @topic.video if @topic.video %>
           <%= raw @topic.body_html %>
         </article>
 
