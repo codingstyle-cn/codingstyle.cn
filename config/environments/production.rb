@@ -51,6 +51,8 @@ Rails.application.configure do
   # https://github.com/rails/rails/issues/8388
   config.action_controller.default_asset_host_protocol = :relative
 
+  # Use a different logger for distributed setups.
+  # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
   config.logger = Logger.new(STDOUT)
   config.logger.level = Logger.const_get('WARN')
   config.log_level = :warn

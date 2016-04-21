@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get 'advertisements/show'
 
+  get 'advertisements/show'
+
   use_doorkeeper do
     controllers applications: 'oauth/applications', authorized_applications: 'oauth/authorized_applications'
   end

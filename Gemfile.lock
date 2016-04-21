@@ -456,12 +456,8 @@ DEPENDENCIES
   binding_of_caller
   bulk_insert!
   bundler-audit
-<<<<<<< cb4d7551ab37a4f9debba5eee533a73e2bd582da
   cancancan (~> 1.13.1)
-=======
   byebug
-  cancancan (~> 1.8.4)
->>>>>>> Fix active menu bug
   capistrano (= 2.9.0)
   capistrano-sidekiq
   capybara
@@ -502,18 +498,11 @@ DEPENDENCIES
   omniauth-github
   oneapm_rpm
   parallel
-<<<<<<< cb4d7551ab37a4f9debba5eee533a73e2bd582da
   pg
   postmark
   postmark-rails
   puma
   rack-attack
-=======
-  postmark (= 1.7.0)
-  postmark-rails (= 0.12.0)
-  pry-byebug
-  puma (~> 2.14.0)
->>>>>>> Fix active menu bug
   rack-cors
   rack-mini-profiler
   rack-utf8_sanitizer
@@ -539,6 +528,9 @@ DEPENDENCIES
   social-share-button
   sprockets
   status-page
+  settingslogic (~> 2.0.9)
+  split
+  sprockets (~> 3.3.3)
   tunemygc
   turbolinks!
   uglifier

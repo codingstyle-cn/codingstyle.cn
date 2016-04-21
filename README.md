@@ -54,11 +54,12 @@ $ sudo apt-get install memcached postgresql-9.4 redis-server imagemagick ghostsc
 Install Elasticsearch
 
 ```bash
+<<<<<<< HEAD
 curl -sSL https://git.io/vVHhm | bash
 ```
 
 ```bash
-$ git clone https://github.com/hkliya/codingstyle.cn.git
+$ git clone https://github.com/codingstyle-cn/codingstyle.cn.git
 $ cd codingstyle.cn
 $ ./bin/setup
 Checking Package Dependencies...

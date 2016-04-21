@@ -69,7 +69,11 @@
       <%= t("topics.no_replies") %>
     </div>
   <% else %>
+<<<<<<< HEAD
     <div id="replies" class="panel panel-default" data-last-floor="<%= @replies.count(:all) %>">
+=======
+    <div id="replies" class="panel panel-default" data-last-floor="<%= @replies.count %>">
+>>>>>>> c407b52aaa46e6305bd2f0f3d77910f046f8581d
       <div class="total panel-heading">
         共收到 <b><%= @topic.replies_count %></b> 条回复
       </div>
