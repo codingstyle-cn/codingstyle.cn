@@ -125,7 +125,7 @@
 
   <script type="text/javascript">
     $(document).ready(function() {
-      var visitedAd = Cookies.get("advertisement-visited");
+      var visitedAd = document.cookie.indexOf("advertisement-visited=") !== -1;
 
       if (!visitedAd) {
         showAd();
@@ -146,7 +146,7 @@
       $("#advertisement-container").hide();      
       $("body").removeClass("not-scroll");
 
-      Cookies.set("advertisement-visited", true);  
+      document.cookie="advertisement-visited=" +escape(true)
     }
 
     function showAd() {
