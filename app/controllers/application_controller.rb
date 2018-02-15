@@ -42,6 +42,11 @@ class ApplicationController < ActionController::Base
     I18n.locale = I18n.default_locale
   end
 
+  before_action :set_adv_url
+  def set_adv_url
+    @adv_url = "https://study.163.com/course/introduction.htm?courseId=1004959029&utm_source=cp-400000000382021&utm_medium=share&utm_campaign=commission"    
+  end
+
   def render_404
     render_optional_error_file(404)
   end
