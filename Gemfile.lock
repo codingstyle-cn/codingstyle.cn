@@ -6,7 +6,7 @@ GIT
       coffee-rails
 
 GEM
-  remote: https://gems.ruby-china.org/
+  remote: https://gems.ruby-china.com/
   specs:
     actionmailer (4.2.4)
       actionpack (= 4.2.4)
@@ -544,4 +544,4 @@ DEPENDENCIES
   will_paginate (= 3.0.7)
 
 BUNDLED WITH
-   1.13.6
+   1.16.1
