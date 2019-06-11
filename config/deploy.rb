@@ -2,7 +2,6 @@ require 'bundler/capistrano'
 require 'capistrano/sidekiq'
 require 'rvm/capistrano'
 require 'capistrano-unicorn'
-require 'capistrano/console'
 
 default_run_options[:pty] = true
 
