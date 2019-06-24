@@ -78,8 +78,8 @@
     create: 提交网站
   menu:
     home: "首页"
-    topics: "社区"
-    open_classes: "公开课"
+    topics: "文章"
+    open_classes: "视频"
     wiki: "Wiki"
     users: "会员"
     cpanel: "后台"
