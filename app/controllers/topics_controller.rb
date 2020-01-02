@@ -152,15 +152,7 @@ class TopicsController < ApplicationController
   end
 
   def create
-    @topic = Topic.new(topic_params)
-    @topic.user_id = current_user.id
-    @topic.node_id = params[:node] || topic_params[:node_id]
-
-    if @topic.save
-      redirect_to(topic_path(@topic.id), notice: t('topics.create_topic_success'))
-    else
-      render action: 'new'
-    end
+    render action: 'new'
   end
 
   def preview
